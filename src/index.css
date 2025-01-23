@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 85% 5%;
+    --foreground: 210 40% 98%;
+    --card: 220 85% 3%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 85% 3%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 85% 12%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 85% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 85% 12%;
+    --input: 220 85% 12%;
+    --ring: 224 76.3% 48%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.georama-heading {
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.georama-text {
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.glowing-text {
+  text-shadow: 0 0 10px hsl(var(--primary));
+}
+
+.diagonal-box {
+  position: relative;
+  background: hsl(var(--secondary));
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.timeline-container {
+  @apply relative;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background: hsl(var(--primary));
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 999px;
+  box-shadow: 0 0 15px hsl(var(--primary));
+}
+
+.timeline-item {
+  @apply relative w-1/2 mb-8;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: hsl(var(--primary));
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px hsl(var(--primary));
+}
+
+.timeline-item.left {
+  @apply left-0 pr-8;
+}
+
+.timeline-item.right {
+  @apply left-1/2 pl-8;
+}
+
+.timeline-item.left::after {
+  right: -10px;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    45deg,
+    hsl(var(--primary)) 0%,
+    hsl(var(--secondary)) 50%,
+    hsl(var(--primary)) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
