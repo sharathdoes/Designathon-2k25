@@ -1,10 +1,7 @@
 import { motion } from 'framer-motion';
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+  CardContent
 } from '@/components/ui/card';
 
 const previousYears = [
