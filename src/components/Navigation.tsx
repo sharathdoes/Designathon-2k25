@@ -37,7 +37,7 @@ export function Navigation() {
             animate={{ opacity: 1 }}
             className="text-xl font-bold"
           >
-            DESIGNATHON
+            VNR VJIET
           </motion.div>
 
           {/* Desktop Navigation */}
