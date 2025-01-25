@@ -31,13 +31,13 @@ export function Navigation() {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-center h-16 relative">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-xl font-bold"
+            className="absolute left-0 text-xl font-bold"
           >
-            VNR VJIET
+            DESIGNATHON
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ export function Navigation() {
           </div>
 
           {/* Mobile Navigation Button */}
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-0">
             <Button
               variant="ghost"
               size="icon"
@@ -77,7 +77,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-foreground/60 hover:text-foreground"
+                  className="block px-3 py-2 text-base font-medium text-foreground/60 hover:text-foreground text-center"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
