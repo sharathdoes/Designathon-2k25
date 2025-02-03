@@ -67,7 +67,7 @@ export function Hero() {
             DESIGNATHON
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto georama-text">
-            Where Innovation Meets Design
+            Collaborate Share Brainstrom Succeed
           </p>
 
           <motion.div
