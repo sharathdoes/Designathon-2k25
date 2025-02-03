@@ -37,7 +37,7 @@ export function Navigation() {
             animate={{ opacity: 1 }}
             className="absolute left-0 text-xl font-bold"
           >
-            DESIGNATHON
+           <span className='cursor-default'>DESIGN-A-THON</span>
           </motion.div>
 
           {/* Desktop Navigation */}
