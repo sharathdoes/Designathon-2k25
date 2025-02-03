@@ -6,6 +6,7 @@ import { PreviousYears } from '@/components/PreviousYears';
 import { Registration } from '@/components/Registration';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { ThemeProvider } from '@/components/theme-provider';
+import { TimelineDemo } from './components/PreviousYearsTimeline';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
           <Hero />
           <EventDetails />
           <PreviousYears />
+          <TimelineDemo></TimelineDemo>
           <Registration />
         </main>
       </div>
