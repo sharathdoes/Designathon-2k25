@@ -40,9 +40,11 @@ export function EventDetails() {
           >
             <h2 className="text-3xl font-bold mb-4 glowing-text">About VNR VJIET</h2>
             <p className="text-muted-foreground">
-              VNR VJIET is a premier engineering institution known for fostering innovation
-              and technical excellence. Our state-of-the-art facilities and industry
-              connections provide the perfect environment for aspiring technologists.
+            Established in 1995 by the Vignana Jyothi Society, the Vallurupalli Nageswara Rao Vignana Jyothi Institute 
+          of Engineering and Technology (VNRVJIET) is recognized by the UGC as a "College with Potential for Excellence"
+           and has been accredited by NAAC with A++ with the highest CGPA in South India of 3.73 out of 4. Many awards have been bestowed 
+           upon the college, including a "Best Innovation by Engineering Institute" at the Global Education Summit, "Best Managed College 
+            with CSR" from the Telangana IT Association, and so on.
             </p>
           </motion.div>
           <motion.div
@@ -67,10 +69,13 @@ export function EventDetails() {
           className="text-center mb-16"
         >
           <h3 className="text-2xl font-bold glowing-text mb-4">Event Overview</h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Designathon is a 24-hour design marathon where participants collaborate
-            to solve real-world problems through innovative design solutions. Join us
-            for an exciting journey of creativity, technology, and impact.
+          <p className="text-muted-foreground max-w-6xl mx-auto">
+          Step into the mystical realm of VNR DESIGN-A-THON, a 24-hour hackathon where creativity 
+          meets innovation! This crucible of design thinking fuels collaboration, 
+          problem-solving, and technical excellence. Guided by industry experts, participants craft groundbreaking
+           solutions aligned with the given prompts. With incredible prizes and an electrifying atmosphere, 
+           VNR DESIGN-A-THON is your gateway to transforming imagination into reality. Heed the call,<br/ > embrace the challenge, 
+           and let the magic unfold!
           </p>
         </motion.div>
 
