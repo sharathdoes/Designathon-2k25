@@ -299,7 +299,7 @@ const domains = {
     }
   };
 
-function ProblemCard({ problem, domain, color }: any) {
+function ProblemCard({ problem, color }: any) {
   return (
     <Card className={`h-[calc(100vh-20rem)] bg-gradient-to-br ${color} backdrop-blur-sm border-primary/20 overflow-auto`}>
       <CardHeader className="sticky top-0 z-10 bg-inherit border-b border-primary/10 pb-4">
@@ -324,12 +324,7 @@ function ProblemCard({ problem, domain, color }: any) {
 }
 
 function DomainCarousel({ domain, data, color }: any) {
-  const [api, setApi] = useState<any>();
-  const [current, setCurrent] = useState(0);
-
   if (!data) return null;
-
-  const Icon = data.icon;
   
   return (
     <div className="space-y-4 mx-8">
@@ -347,8 +342,6 @@ function DomainCarousel({ domain, data, color }: any) {
             loop: true,
           }}
           className="w-full"
-          setApi={setApi}
-          onSelect={() => setCurrent(api?.selectedScrollSnap() || 0)}
         >
           <CarouselContent className='px-3'>
             {data.problems.map((problem: any, index: number) => (
@@ -362,18 +355,6 @@ function DomainCarousel({ domain, data, color }: any) {
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
-        
-        {/* <div className="flex justify-center mt-4 space-x-2">
-          {data.problems.map((_: any, index: number) => (
-            <button
-              key={index}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                current === index ? "bg-primary w-6" : "bg-primary/20"
-              }`}
-              onClick={() => api?.scrollTo(index)}
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   );
