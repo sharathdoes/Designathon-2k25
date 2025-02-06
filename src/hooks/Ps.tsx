@@ -372,7 +372,7 @@ export function ProblemStatements() {
   }, [location]);
 
   if (!domains[activeDomain]) {
-    console.error(`Domain ${activeDomain} not found`);
+    setActiveDomain("cyberSecurityGenderDiversity");
     return null;
   }
 
