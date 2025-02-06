@@ -32,14 +32,7 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center h-16 relative">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="absolute left-0 text-xl font-bold"
-          >
-            DESIGNATHON
-          </motion.div>
-
+         
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (

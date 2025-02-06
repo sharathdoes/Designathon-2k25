@@ -7,26 +7,29 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 
 const domains = [
   {
     icon: Shield,
-    title: 'Cyber Security',
-    description: 'Tackle modern security challenges and develop innovative solutions for digital protection.',
+    title: 'Cyber Security and Gender Diversity',
+    description: 'Address digital security challenges and promote inclusive technology solutions for gender equality.',
   },
   {
     icon: Factory,
-    title: 'Industry 4.0',
-    description: 'Explore smart manufacturing, IoT integration, and industrial automation solutions.',
+    title: 'Industry 4.0 and Sustainability',
+    description: 'Develop sustainable smart manufacturing solutions that integrate IoT and green technologies.',
   },
   {
     icon: Brain,
-    title: 'AI/ML',
-    description: 'Create cutting-edge applications using artificial intelligence and machine learning.',
+    title: 'Open Innovation',
+    description: 'Create innovative solutions across domains using emerging technologies and collaborative approaches.',
   },
 ];
 
 export function EventDetails() {
+  const navigate = useNavigate();
+
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4">
@@ -90,10 +93,16 @@ export function EventDetails() {
                   </div>
                   <CardTitle className="glowing-text">{domain.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-4">
                   <CardDescription className="text-muted-foreground">
                     {domain.description}
                   </CardDescription>
+                  <button
+                    onClick={() => navigate('/prob-stats', { state: { selectedDomain: domain.title === "Cyber Security and Gender Diversity" ? 'cyberSecurityGenderDiversity' : domain.title === "Industry 4.0 and Sustainability" ? 'industrySustainability' : 'openInnovation' } })}
+                    className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                  >
+                    View Problem Statements 
+                  </button>
                 </CardContent>
               </Card>
             </motion.div>
