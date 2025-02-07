@@ -385,7 +385,7 @@ export function ProblemStatements() {
           transition={{ duration: 0.6 }}
           className="text-center mb-8"
         >
-          <h1 className="text-3xl mr-10 font-bold mb-3 glowing-text">Problem Statements</h1>
+          <h1 className="text-3xl  font-bold mb-3 glowing-text">Problem Statements</h1>
          
         </motion.div>
 

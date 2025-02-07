@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./hooks/Home"
-import { ProblemStatements } from "./hooks/Ps"
+import ProblemStatements  from "./hooks/Ps"
 function App() {
   return (
     <div>

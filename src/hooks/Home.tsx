@@ -6,7 +6,7 @@ import { PreviousYears } from '@/components/PreviousYears';
 import { Registration } from '@/components/Registration';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { ThemeProvider } from '@/components/theme-provider';
-
+import MarqueeSection from './Marquee';
 function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -26,6 +26,7 @@ function Home() {
         <Navigation />
         <main>
           <Hero />
+          <MarqueeSection/>
           <EventDetails />
           <PreviousYears />
           <Registration />
