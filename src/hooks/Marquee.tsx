@@ -23,7 +23,7 @@ const reviews = [
   {
     name: "KPR developers",
     username: "@KPR",
-    body: "Established in 2006.",
+    body: "Devs Established in 2006.",
     link: "https://kprdevelopers.in",
     img: logo2,
   },
