@@ -63,7 +63,7 @@ export function Hero() {
           transition={{ duration: 1 }}
           className="text-center"
         >
-          <h1 className="text-7xl md:text-9xl font-bold mb-6 glowing-text georama-heading bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/50 to-primary">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-bold mb-6 glowing-text georama-heading bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/50 to-primary">
             DESIGNATHON
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto georama-text">
