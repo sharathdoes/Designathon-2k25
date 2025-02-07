@@ -7,19 +7,19 @@ const reviews = [
   {
     name: "Monarch",
     username: "@M",
-    body: "Global workspace, Crafted in India.",
+    body: "Global workspace, Crafted in India.  monarchergo.com",
     img: mlogo,
   },
   {
     name: "QuettaNex",
-    username: "@QN",
-    body: "QuettaNex IT solutions",
+    username: "@QN", 
+    body: "QuettaNex IT solutions.  quettanex.com",
     img: logo,
   },
   {
     name: "KPR developers",
     username: "@KPR",
-    body: "Established in 2006.",
+    body: "Established in 2006.  kprdevelopers.in",
     img: logo2,
   },
   

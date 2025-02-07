@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown, Trophy } from 'lucide-react';
 
 function CountdownTimer() {
-  const targetDate = new Date('2025-02-21T08:00:00+05:30');
+  const targetDate = new Date('2025-03-01T10:00:00+05:30'); // IST (UTC+05:30)
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
