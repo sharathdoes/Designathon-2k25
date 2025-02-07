@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { EventDetails } from '@/components/EventDetails';
-import { PreviousYears } from '@/components/PreviousYears';
 import { Registration } from '@/components/Registration';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -28,7 +27,7 @@ function Home() {
           <Hero />
           <MarqueeSection/>
           <EventDetails />
-          <PreviousYears />
+          {/* <PreviousYears /> */}
           <Registration />
         </main>
       </div>
