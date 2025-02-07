@@ -25,8 +25,8 @@ function Home() {
         <Navigation />
         <main>
           <Hero />
-          <MarqueeSection/>
           <EventDetails />
+          <MarqueeSection/>
           {/* <PreviousYears /> */}
           <Registration />
         </main>
