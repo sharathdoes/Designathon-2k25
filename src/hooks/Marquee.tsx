@@ -3,7 +3,6 @@ import { Marquee } from "../components/magicui/marquee";
 import logo2 from "../lib/logo2.png"
 import logo from "../lib/Logo-1.png"
 import mlogo from "../lib/image.png"
-import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
@@ -47,8 +46,9 @@ const ReviewCard = ({
 }) => {
   return (
     <figure
+      onClick={() => window.open(link, '_blank')}
       className={cn(
-        "relative w-64 overflow-hidden rounded-xl border p-4",
+        "relative w-64 overflow-hidden rounded-xl border p-4 cursor-pointer transition-colors",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -65,14 +65,10 @@ const ReviewCard = ({
         </div>
       </div>
       <blockquote className="mt-2 text-sm">
-        {body} 
-        <Button 
-          variant="ghost" 
-          className="p-0 h-auto font-normal hover:bg-transparent text-primary"
-          onClick={() => window.open(link, '_blank')}
-        >
+        {body}
+        <span className="text-primary">
           {link.replace('https://', '')}
-        </Button>
+        </span>
       </blockquote>
     </figure>
   );

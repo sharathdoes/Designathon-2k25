@@ -343,7 +343,7 @@ function DomainCarousel({ domain, data, color }: any) {
           }}
           className="w-full"
         >
-          <CarouselContent className='px-3'>
+          <CarouselContent className=''>
             {data.problems.map((problem: any, index: number) => (
               <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
@@ -389,12 +389,12 @@ export function ProblemStatements() {
          
         </motion.div>
 
-        <div className="flex justify-center mr-12 mb-6 space-x-4">
+        <div className="flex justify-center items-center mr-12 mb-6 space-x-2 sm:space-x-4">
           {(Object.keys(domains) as Array<keyof typeof domains>).map((key) => (
             <button
               key={key}
               onClick={() => setActiveDomain(key)}
-              className={`px-5 py-2 rounded-lg transition-all duration-300 ${
+              className={`px-2 sm:px-5 py-1 sm:py-2 rounded-lg transition-all duration-300 text-sm sm:text-base ${
                 activeDomain === key
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary hover:bg-primary/20"
