@@ -3,23 +3,28 @@ import { Marquee } from "../components/magicui/marquee";
 import logo2 from "../lib/logo2.png"
 import logo from "../lib/Logo-1.png"
 import mlogo from "../lib/image.png"
+import { Button } from "@/components/ui/button";
+
 const reviews = [
   {
     name: "Monarch",
     username: "@M",
-    body: "Global workspace, Crafted in India.  monarchergo.com",
+    body: "Global workspace, Crafted in India.",
+    link: "https://monarchergo.com",
     img: mlogo,
   },
   {
     name: "QuettaNex",
     username: "@QN", 
-    body: "QuettaNex IT solutions.  quettanex.com",
+    body: "QuettaNex IT solutions.",
+    link: "https://quettanex.com",
     img: logo,
   },
   {
     name: "KPR developers",
     username: "@KPR",
-    body: "Established in 2006.  kprdevelopers.in",
+    body: "Established in 2006.",
+    link: "https://kprdevelopers.in",
     img: logo2,
   },
   
@@ -32,16 +37,18 @@ const ReviewCard = ({
   name,
   username,
   body,
+  link,
 }: {
   img: string;
   name: string;
   username: string;
   body: string;
+  link: string;
 }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative w-64 overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -57,7 +64,16 @@ const ReviewCard = ({
           <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm">
+        {body} 
+        <Button 
+          variant="ghost" 
+          className="p-0 h-auto font-normal hover:bg-transparent text-primary"
+          onClick={() => window.open(link, '_blank')}
+        >
+          {link.replace('https://', '')}
+        </Button>
+      </blockquote>
     </figure>
   );
 };

@@ -8,6 +8,7 @@ const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Previous Years', href: '#previous-years' },
   { name: 'Register', href: '#register' },
+  { name: "Problem Statements", href: "/prob-stats" }
 ];
 
 export function Navigation() {

@@ -18,7 +18,7 @@ const domains = {
       color: "from-blue-500/20 to-blue-600/20",
       problems: [
         {
-          title: "AI-Based Deepfake Detection in Photos and Videos",
+          title: "1.1 AI-Based Deepfake Detection in Photos and Videos",
           description: "Deepfakes, AI-generated synthetic media, pose a significant threat to digital authenticity, misinformation, and cybersecurity. Develop an AI-powered system capable of detecting deepfake videos, images, and audio with high accuracy. Your solution should leverage advanced computer vision techniques, deep learning models, and real-time forensic analysis to identify synthetic manipulations. Focus on scalability, robustness against adversarial attacks, and integration with existing media verification frameworks.",
           objectives: [
             "Implement deep learning techniques such as convolutional neural networks (CNNs) and transformer-based models for deepfake detection",
@@ -29,7 +29,7 @@ const domains = {
           ]
         },
         {
-          title: "Gender-Based Violence Prevention and Response System",
+          title: "1.2 Gender-Based Violence Prevention and Response System",
           description: "Gender-based violence (GBV) remains a significant issue in educational institutions. Develop a digital platform that raises awareness, enables secure reporting, and provides AI-driven threat assessment to prevent and respond to GBV incidents effectively.",
           objectives: [
             "Create an anonymous, encrypted reporting mechanism for victims and witnesses",
@@ -40,7 +40,7 @@ const domains = {
           ]
         },
         {
-          title: "Secure File Sharing System for Law Enforcement Agencies",
+          title: "1.3 Secure File Sharing System for Law Enforcement Agencies",
           description: "Law enforcement agencies frequently share sensitive case files across teams and jurisdictions, making them vulnerable to breaches. Develop a highly secure, end-to-end encrypted file-sharing system that ensures confidentiality, integrity, and availability while complying with data protection laws.",
           objectives: [
             "Implement AES-256 encryption for file storage and transmission",
@@ -51,7 +51,7 @@ const domains = {
           ]
         },
         {
-          title: "AI-Powered Cyber Threat Intelligence Platform",
+          title: "1.4 AI-Powered Cyber Threat Intelligence Platform",
           description: "The rising frequency of cyberattacks necessitates proactive threat detection. Develop an AI-driven cyber threat intelligence platform that continuously collects, analyzes, and disseminates real-time threat data from multiple sources, enabling rapid response to cyber threats.",
           objectives: [
             "Aggregate data from dark web forums, social media, and network logs using AI-based web scraping",
@@ -62,7 +62,7 @@ const domains = {
           ]
         },
         {
-          title: "Cryptocurrency Crime Investigation & Digital Forensics Tool",
+          title: "1.5 Cryptocurrency Crime Investigation & Digital Forensics Tool",
           description: "Cryptocurrencies are widely used for illicit activities such as money laundering and fraud. Develop a digital forensics tool that enables law enforcement agencies to track cryptocurrency transactions, identify suspicious patterns, and generate legally admissible evidence.",
           objectives: [
             "Implement multi-blockchain transaction tracking with real-time data analysis",
@@ -73,7 +73,7 @@ const domains = {
           ]
         },
         {
-          title: "Secure IoT Device Monitoring & Incident Response System",
+          title: "1.6 Secure IoT Device Monitoring & Incident Response System",
           description: "IoT devices are increasingly targeted by cybercriminals, leading to potential system breaches. Develop an AI-driven monitoring system that detects vulnerabilities in real time and automates incident response to protect IoT infrastructure.",
           objectives: [
             "Utilize machine learning algorithms to detect anomalies and classify security threats",
@@ -84,7 +84,7 @@ const domains = {
           ]
         },
         {
-          title: "Unconscious Bias Detection in Hiring and Performance Evaluations",
+          title: "1.7 Unconscious Bias Detection in Hiring and Performance Evaluations",
           description: "Unconscious bias in hiring, performance evaluations, and promotions can lead to inequitable outcomes and hinder diversity efforts. Develop an AI-powered tool that detects and mitigates unconscious bias by analyzing decision-making patterns, evaluating historical data, and providing real-time insights to ensure fair and inclusive practices.",
           objectives: [
             "Implement machine learning algorithms to detect bias patterns in hiring, promotions, and performance reviews",
@@ -95,7 +95,7 @@ const domains = {
           ]
         },
         {
-          title: "AI-Powered Fake News and Misinformation Detection Interface",
+          title: "1.8 AI-Powered Fake News and Misinformation Detection Interface",
           description: "Misinformation and fake news spread rapidly across digital platforms, influencing public opinion and creating societal risks. Develop an AI-driven interface that detects fake news and misleading posts while providing transparent reasoning behind its findings. The system should analyze textual, visual, and contextual cues using machine learning, NLP, and fact-checking algorithms.",
           objectives: [
             "Implement NLP models to analyze textual content for bias, exaggeration, or false claims",
@@ -113,7 +113,7 @@ const domains = {
       color: "from-blue-500/20 to-blue-600/20",
       problems: [
         {
-          title: "Eco-Insight: Leveraging Big Data & AI for Climate Action",
+          title: "2.1 Eco-Insight: Leveraging Big Data & AI for Climate Action",
           description: "Develop an AI-powered data analytics platform that collects, processes, and visualizes climate data from IoT sensors, satellite imagery, and public databases. The system should use advanced machine learning models to detect patterns, predict environmental risks, and provide real-time insights to aid climate action initiatives.",
           objectives: [
             "Implement big data pipelines for real-time collection and processing of multi-source climate data",
@@ -124,7 +124,7 @@ const domains = {
           ]
         },
         {
-          title: "AR/VR-Based Construction Planning and Visualization Platform",
+          title: "2.2 AR/VR-Based Construction Planning and Visualization Platform",
           description: "Create an AR/VR platform that enhances construction planning by allowing teams to visualize building designs in 3D, improving collaboration and project outcomes.",
           objectives: [
             "Develop a VR interface for immersive architectural visualization",
@@ -135,7 +135,7 @@ const domains = {
           ]
         },
         {
-          title: "Industrial IoT Security: Cyber Defense for Smart Factories",
+          title: "2.3 Industrial IoT Security: Cyber Defense for Smart Factories",
           description: "With the rise of smart factories, cyber threats pose a significant risk to industrial systems. Build a cybersecurity framework integrating blockchain, AI-driven anomaly detection, and Zero Trust architectures to safeguard Industrial IoT (IIoT) networks from cyberattacks, ensuring operational continuity.",
           objectives: [
             "Develop machine learning-based intrusion detection to identify unusual network behaviors and prevent cyber threats",
@@ -146,7 +146,7 @@ const domains = {
           ]
         },
         {
-          title: "Digital Twins: AI-Driven Simulation & Optimization for Smart Manufacturing",
+          title: "2.4 Digital Twins: AI-Driven Simulation & Optimization for Smart Manufacturing",
           description: "Create a digital twin platform that uses real-time data ingestion, AI simulations, and predictive analytics to mirror industrial processes. This system should enable proactive maintenance, workflow optimization, and production efficiency improvements in smart factories.",
           objectives: [
             "Implement real-time sensor integration for continuous data streaming from physical assets",
@@ -157,7 +157,7 @@ const domains = {
           ]
         },
         {
-          title: "AI-Driven Predictive Maintenance & Intelligent Resource Allocation",
+          title: "2.5 AI-Driven Predictive Maintenance & Intelligent Resource Allocation",
           description: "Industrial downtime leads to significant losses. Develop an AI-powered predictive maintenance system that analyzes sensor and operational data to detect early signs of equipment failure. Additionally, implement an intelligent resource allocation framework to optimize energy, material usage, and labor distribution.",
           objectives: [
             "Use deep learning for anomaly detection in equipment health, predicting failures before they occur",
@@ -168,7 +168,7 @@ const domains = {
           ]
         },
         {
-          title: "Biodiversity Monitoring: AI & Remote Sensing for Conservation",
+          title: "2.6 Biodiversity Monitoring: AI & Remote Sensing for Conservation",
           description: "Preserving biodiversity requires constant monitoring of ecosystems. Develop an AI-powered wildlife tracking system that integrates computer vision, NLP for conservation research, and satellite imagery analysis to track species populations and detect environmental threats.",
           objectives: [
             "Use image recognition models to classify species from drone and camera trap footage automatically",
@@ -179,7 +179,7 @@ const domains = {
           ]
         },
         {
-          title: "Edge AI for Sustainable Smart Cities: Real-Time Energy & Waste Management",
+          title: "2.7 Edge AI for Sustainable Smart Cities: Real-Time Energy & Waste Management",
           description: "Urban sustainability is critical for the future. Develop an Edge AI-based system that optimizes energy consumption, automates waste management, and enhances smart city infrastructure resilience.",
           objectives: [
             "Implement computer vision-based waste classification to optimize smart recycling systems in urban areas",
@@ -190,7 +190,7 @@ const domains = {
           ]
         },
         {
-          title: "AI-Powered Supply Chain Resilience for Manufacturing",
+          title: "2.8 AI-Powered Supply Chain Resilience for Manufacturing",
           description: "Develop an AI-driven blockchain based system to enhance supply chain resilience by predicting disruptions, optimizing logistics, and ensuring smooth material flow in smart manufacturing.",
           objectives: [
             "Use AI to forecast supply chain disruptions due to weather, demand fluctuations, or geopolitical issues",
@@ -208,7 +208,7 @@ const domains = {
       color: "from-blue-500/20 to-blue-600/20",
       problems: [
         {
-          title: "Automated Computer Systems for Streamlined Pipelines",
+          title: "3.1 Automated Computer Systems for Streamlined Pipelines",
           description: "Develop an automated system that optimizes and manages workflows, reducing manual intervention and enhancing operational efficiency.",
           objectives: [
             "Automate task scheduling and execution across multiple applications",
@@ -219,7 +219,7 @@ const domains = {
           ]
         },
         {
-          title: "Dynamic, Editable Website Template Generator",
+          title: "3.2 Dynamic, Editable Website Template Generator",
           description: "Design a platform that allows users to create customizable and adaptive website templates suited for various business or personal needs.",
           objectives: [
             "Enable drag-and-drop template customization with modular components",
@@ -230,7 +230,7 @@ const domains = {
           ]
         },
         {
-          title: "Preventing Doom Scrolling and Social Media Addiction",
+          title: "3.3 Preventing Doom Scrolling and Social Media Addiction",
           description: "Develop a tool that helps users break the cycle of doom scrolling by promoting mindful digital consumption and screen time balance.",
           objectives: [
             "Use AI to detect prolonged negative content consumption patterns",
@@ -241,7 +241,7 @@ const domains = {
           ]
         },
         {
-          title: "Green Algorithms – Optimizing Energy Consumption in Data Centers",
+          title: "3.4 Green Algorithms – Optimizing Energy Consumption in Data Centers",
           description: "Data centers are major energy consumers, and optimizing their efficiency is crucial for a sustainable future. Create algorithms and software solutions that analyze workload patterns, optimize resource allocation, and reduce energy consumption.",
           objectives: [
             "Develop predictive modeling to forecast energy demand and optimize usage",
@@ -252,7 +252,7 @@ const domains = {
           ]
         },
         {
-          title: "AR-Powered Indoor Navigation for Emergency Situations and Incident Response Visualization",
+          title: "3.5 AR-Powered Indoor Navigation for Emergency Situations and Incident Response Visualization",
           description: "Develop an AR-powered indoor navigation system for risk mitigation and emergency situations that guides users through complex environments like malls, hospitals, and airports using real-time, interactive overlays.",
           objectives: [
             "Utilize AR and computer vision to provide step-by-step indoor navigation assistance",
@@ -263,7 +263,7 @@ const domains = {
           ]
         },
         {
-          title: "Human Activity Recognition Benchmark for Elderly Care (Healthcare)",
+          title: "3.6 Human Activity Recognition Benchmark for Elderly Care (Healthcare)",
           description: "Create a benchmark dataset for human activity recognition (HAR) with a focus on elderly-specific movements and behaviors. Leverage transfer learning to improve model accuracy and support healthcare monitoring solutions.",
           objectives: [
             "Collect and label a diverse dataset capturing common elderly movements such as walking, sitting, and fall detection",
@@ -274,7 +274,7 @@ const domains = {
           ]
         },
         {
-          title: "Audio Source Detection and Separation for Musical Instrument Tones",
+          title: "3.7 Audio Source Detection and Separation for Musical Instrument Tones",
           description: "Build an AI-driven algorithm that identifies and separates individual musical instrument sounds from mixed audio files, enabling enhanced analysis and music production.",
           objectives: [
             "Develop a deep learning model capable of isolating multiple instrument tracks from polyphonic audio",
@@ -285,7 +285,7 @@ const domains = {
           ]
         },
         {
-          title: "Real-Time Indian Sign Language (ISL) to Text and Speech Translator",
+          title: "3.8 Real-Time Indian Sign Language (ISL) to Text and Speech Translator",
           description: "Indian Sign Language (ISL) users face communication barriers due to the lack of real-time translation tools. Develop an AI-powered solution that translates ISL gestures into text and speech instantly, enabling seamless interaction for the deaf and hard-of-hearing community. The system should leverage deep learning, computer vision, and NLP to ensure accurate and contextual translation.",
           objectives: [
             "Utilize deep learning models, such as CNNs and LSTMs, for gesture recognition from live video input",
