@@ -95,7 +95,7 @@ const ReviewCard = ({
 export default function MarqueeSection() {
   return (
     <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-      <Marquee pauseOnHover className="[--duration:20s]">
+      <h2 className="pb-10 text-2xl font-bold glowing-text mr-5">Sponsers</h2><Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
