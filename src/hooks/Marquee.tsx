@@ -3,7 +3,8 @@ import { Marquee } from "../components/magicui/marquee";
 import logo2 from "../lib/logo2.png"
 import logo from "../lib/Logo-1.png"
 import mlogo from "../lib/image.png"
-
+import logo3 from "../lib/inkoti.png"
+import logo4 from "../lib/mari-inkoti.png"
 const reviews = [
   {
     name: "Monarch",
@@ -24,6 +25,22 @@ const reviews = [
     username: "@KPR",
     body: "Devs Established in 2006.",
     link: "https://kprdevelopers.in",
+    img: logo2,
+  },
+  
+  {
+    name: "RV Toures and Travels PVT.LTD.",
+    username: "@RV",
+    body: "Hyd | Benguluru | Varanasi ",
+    link: "https://rvtoursandtravels.com",
+    img: logo4,
+  },
+  
+  {
+    name: "Vajra",
+    username: "@V",
+    body: "Building Values. 6 years+",
+    link: "https://thevajra.in/",
     img: logo2,
   },
   
@@ -66,6 +83,7 @@ const ReviewCard = ({
       </div>
       <blockquote className="mt-2 text-sm">
         {body}
+        <br />
         <span className="text-primary">
           {link.replace('https://', '')}
         </span>
