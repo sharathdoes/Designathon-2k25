@@ -41,7 +41,7 @@ const reviews = [
     username: "@V",
     body: "Building Values. 6 years+",
     link: "https://thevajra.in/",
-    img: logo2,
+    img: logo3,
   },
   
 ];
