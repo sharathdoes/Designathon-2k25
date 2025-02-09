@@ -388,7 +388,6 @@ export function ProblemStatements() {
           <h1 className="text-3xl  font-bold mb-3 glowing-text">Problem Statements</h1>
          
         </motion.div>
-
         <div className="flex justify-center items-center mr-12 mb-6 space-x-2 sm:space-x-4">
           {(Object.keys(domains) as Array<keyof typeof domains>).map((key) => (
             <button
@@ -400,7 +399,7 @@ export function ProblemStatements() {
                   : "bg-secondary hover:bg-primary/20"
               }`}
             >
-              {domains[key].name}
+              {domains[key].name} ({domains[key].problems.length})
             </button>
           ))}
         </div>
