@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown, Trophy } from 'lucide-react';
 
 function CountdownTimer() {
-  const targetDate = new Date('2025-03-01T10:00:00+05:30'); // IST (UTC+05:30)
+  const targetDate = new Date('2026-03-01T10:00:00+05:30'); // IST (UTC+05:30)
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
@@ -83,10 +83,10 @@ export function Hero() {
             </div>
           </motion.div>
 
+          <CountdownTimer />
           <div className="text-center">
-            <h2 className="text-6xl font-bold glowing-text georama-heading">COMPLETED</h2>
+            <h2 className="text-3xl font-bold mt-5 glowing-text georama-heading">See you next year !</h2>
           </div>
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
