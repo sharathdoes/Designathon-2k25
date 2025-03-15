@@ -83,7 +83,9 @@ export function Hero() {
             </div>
           </motion.div>
 
-          <CountdownTimer />
+          <div className="text-center">
+            <h2 className="text-6xl font-bold glowing-text georama-heading">COMPLETED</h2>
+          </div>
 
           <motion.div
             initial={{ opacity: 0 }}
